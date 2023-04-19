@@ -15,6 +15,14 @@
 .main-header {
     background-color: lightblue;
     grid-area: 1 / 2 / 2 / 3;
+    padding: 20px;
+}
+
+/*      toolbar */
+.toolbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    margin-bottom: 10px;
 }
 
 .search-icon {
@@ -45,7 +53,23 @@
     font-size: 1.5rem;
 }
 
-/*      profile-header */
+/*      profile-section */
+.profile-section {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.large-profile-picture {
+    background-color: purple;
+    height: 70px;
+    width: 70px;
+}
+
+.greeting {
+    font-size: 1.5rem;
+}
+
 .hero-profile-name {
     font-size: 2rem;
 }
@@ -54,9 +78,24 @@
     font-style: italic;
 }
 
-/*       action-button-container */
-.action-button-container > button {
+/*      button-section */
+
+.new-button {
+    
+}
+
+.upload-button {
+
+}
+
+.share-button {
+}
+
+
+
+.lower-section > button {
     width: 100px;
+    /* height: 50px; */
     padding: 5px;
     border-radius: 3px;
     border: none;

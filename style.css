@@ -7,11 +7,8 @@
 }
 
 .layout-grid-container {
-    height: 100vh;
-
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 30% 1fr;
 }
 
 /* Main header at top of page */
@@ -40,7 +37,7 @@ svg.search-icon {
 
 .search-bar {
     min-width: 100px;
-    height: 30%;
+    height: 35%;
     margin-top: 5px;
 
     background-color: #3DCFAF;
@@ -97,10 +94,6 @@ svg.bell-icon {
     justify-self: center;
 }
 
-/* .profile-section > p {
-    
-} */
-
 .greeting {
     font-size: 1rem;
 }
@@ -130,10 +123,12 @@ svg.bell-icon {
     border-radius: 20px;
     border: none;
     
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     background-color: #42A59C;
-    color: white;
+    color: #ffffff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     
     display: flex;
     justify-content: center;
@@ -143,7 +138,7 @@ svg.bell-icon {
 
 /* Side bar on left side of page */
 .sidebar {
-    background-color: #99E3A3;
+    background-color: #63AB6F;
     grid-area: 1 / 1 / 3 / 2;
 }
 
@@ -152,152 +147,78 @@ svg.bell-icon {
     padding: 10px;
 
     display: grid;
-    gap: 10%;
+    gap: 5%;
 }
 
+.sidebar-wrapper svg,
+.sidebar-wrapper p {
+    /* for SVGs */
+    fill: white;
+    
+    /* for Ps */
+    color: rgb(255, 255, 255);
+}
+
+/*      sidebar header section */
 .sidebar-header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
+    justify-items: center;
 }
 
 .sidebar-header > .dashboard-icon {
     height: 50px;
     width: 50px;
-    border: 1px solid brown;
 }
 
 .sidebar-header > p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-self: start;
 }
 
+/*      sidebar main links section */
 .main-links {
     display: grid;
     gap: 10px;
 }
 
-.main-links > .home-link {
+.main-links > div {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
 }
 
-.home-link > .home-logo {
+.main-links svg {
     height: 30px;
     width: 30px;
-    border: 1px solid brown;
+    justify-self: center;
 }
 
-.home-link > p {
-    font-size: 1rem;
-}
-
-.main-links > .profile-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.profile-link > .profile-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
-
-.main-links > .messages-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.messages-link > .messages-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
-
-.main-links > .history-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.history-link > .history-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
-
-.main-links > .tasks-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.tasks-link > .tasks-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
-
-.main-links > .communities-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.communities-link > .communities-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
+/*      utilities links section*/
 
 .utilities-links {
     display: grid;
     gap: 10px;
 }
 
-.settings-link {
+.utilities-links > div {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
 }
 
-.settings-logo {
+.utilities-links svg {
     height: 30px;
     width: 30px;
-    border: 1px solid brown;
-}
-
-.support-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.support-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
-}
-
-.privacy-link {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.privacy-logo {
-    height: 30px;
-    width: 30px;
-    border: 1px solid brown;
+    justify-self: center;
 }
 
 /* main content area with content cards */
 .main-content {
     background-color: #d3f9d6;
-    padding: 10px;
-
+    padding: 20px;
     grid-area: 2 / 2 / 3 / 3;
 }
 

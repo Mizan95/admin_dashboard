@@ -47,7 +47,7 @@ svg.search-icon {
     height: 35%;
     margin-top: 5px;
 
-    background-color: #3DCFAF;
+    background-color: #befcc3;
     border: none;
     border-radius: 20px;
 }
@@ -102,10 +102,12 @@ svg.bell-icon {
 }
 
 .greeting {
+    color: #003D0A;
     font-size: 1rem;
 }
 
 .hero-profile-name {
+    color: #003D0A;
     font-size: 1.25rem;
     font-weight: 600;
 }

@@ -14,7 +14,7 @@
     grid-template-rows: 1fr 5fr;
 }
 
-footer {
+.extra-section {
     height: 100px;
 }
 
@@ -277,13 +277,11 @@ svg.bell-icon {
     background-color: #F8FFF8;
     border-radius: 5px;
     box-shadow: 0px 2px 2px 0px gray;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .article-content-wrapper {
+    height: 100%;
+    width: 100%;
     padding: 10px;
 
     display: grid;
@@ -323,7 +321,25 @@ svg.bell-icon {
 .announcements-grid {
     display: grid;
     grid-template-rows: 50px auto;
-    gap: 10px;
+    /* gap: 10px; */
+}
+
+.announcements-grid > article {
+    background-color: #F8FFF8;
+    box-shadow: 0px 2px 2px 0px gray;
+}
+
+.announcement-2 {
+  border: 1px solid green;
+}
+
+.announcements-grid div.wrapper {
+    padding: 30px;
+    margin: auto;
+}
+
+.announcements-grid > article > p {
+    font-size: 0.8rem;
 }
 
 /*  trending section */

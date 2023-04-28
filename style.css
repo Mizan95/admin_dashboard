@@ -285,7 +285,7 @@ svg.bell-icon {
     padding: 10px;
 
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 70% 20%;
     gap: 10px;
 }
 

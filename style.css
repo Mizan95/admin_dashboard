@@ -9,7 +9,7 @@
 .page-layout-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 0.5fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 footer {
@@ -233,8 +233,8 @@ svg.bell-icon {
 /*  main content grid */
 .main-content-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
 
@@ -254,6 +254,7 @@ svg.bell-icon {
     font-size: 1.5rem;
 }
 
+/*  your projects section */
 .your-projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -278,12 +279,14 @@ svg.bell-icon {
     align-items: center;
 }
 
+/*  announcements section */
 .announcements-grid {
     display: grid;
     grid-template-rows: 50px auto;
     gap: 10px;
 }
 
+/*  trending section */
 .trending-grid {
     display: grid;
     grid-template-rows: 50px auto;

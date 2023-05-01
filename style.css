@@ -236,6 +236,8 @@ svg.bell-icon {
 
 /*  main content grid */
 .main-content-grid {
+    margin-top: 10px;
+
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -260,7 +262,7 @@ svg.bell-icon {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3.5% repeat(auto-fit, minmax(25px, 1fr));
     grid-auto-flow: row;
-    gap: 25px;
+    gap: 2.5%;
 }
 
 .your-projects-heading {
@@ -321,16 +323,26 @@ svg.bell-icon {
 .announcements-grid {
     display: grid;
     grid-template-rows: 50px auto;
-    /* gap: 10px; */
+    gap: 2.5%;
 }
 
-.announcements-grid > article {
-    background-color: #F8FFF8;
+.announcements-wrapper {
     box-shadow: 0px 2px 2px 0px gray;
+    display: grid;
+
+    border-top-right-radius: 20px;
 }
 
-.announcement-2 {
-  border: 1px solid green;
+.announcements-heading {
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+    background-color: #d3f9d6;
+}
+
+.announcements-grid article {
+    background-color: #F8FFF8;
 }
 
 .announcements-grid div.wrapper {
@@ -341,6 +353,25 @@ svg.bell-icon {
 .announcements-grid > article > p {
     font-size: 0.8rem;
 }
+
+.announcements-grid h4 {
+    margin-bottom: 5px;
+}
+
+.divider-line {
+    width: 70%;
+    border: 1px solid gainsboro;
+}
+
+.divider-wrapper {
+    justify-self: center;
+    width: 100%;
+    background-color: #F8FFF8;
+
+    display: flex;
+    justify-content: center;
+}
+
 
 /*  trending section */
 .trending-grid {

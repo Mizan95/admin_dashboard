@@ -374,10 +374,15 @@ svg.bell-icon {
 
 
 /*  trending section */
+.trending-heading {
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
 .trending-grid {
     display: grid;
-    grid-template-rows: 50px auto;
-    gap: 10px;
+    gap: 2.5%;
 }
 
 .trending-grid > div {
@@ -390,6 +395,11 @@ svg.bell-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.trending-grid img {
+    height: 50px;
+    border-radius: 50%;
 }
 
 

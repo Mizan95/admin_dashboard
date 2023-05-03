@@ -242,7 +242,7 @@ svg.bell-icon {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .your-projects-grid {
@@ -261,7 +261,7 @@ svg.bell-icon {
 .your-projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3.5% repeat(auto-fit, minmax(25px, 1fr));
+    grid-template-rows: 2.5% repeat(auto-fit, minmax(25px, 1fr));
     grid-auto-flow: row;
     gap: 2.5%;
 }
@@ -323,15 +323,16 @@ svg.bell-icon {
 /*  announcements section */
 .announcements-grid {
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 1fr 9fr;
     gap: 2.5%;
 }
 
 .announcements-wrapper {
+    background-color: #F8FFF8;
     box-shadow: 0px 2px 2px 0px gray;
     display: grid;
 
-    border-top-right-radius: 20px;
+    border-radius: 10px;
 }
 
 .announcements-heading {
@@ -340,6 +341,16 @@ svg.bell-icon {
     font-weight: 700;
 
     background-color: #d3f9d6;
+}
+
+.announcement-1 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.announcement-3 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .announcements-grid article {
@@ -378,9 +389,11 @@ svg.bell-icon {
 
 .trending-section {
     height: 100%;
+    /* margin-top: 10%; */
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 1fr 9fr;
 }
 
 .trending-heading {
